@@ -1,0 +1,28 @@
+#fuq
+
+server:
+  port: 8080
+  context-path: / #
+
+spring:
+  datasource:
+    url:jdbc:mysql://localhost:3306/lrapp?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    tomcat:
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate: #ddd
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  aop:
+    proxy-target-class: true
+
+
+
