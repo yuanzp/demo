@@ -6,9 +6,9 @@ server:
 
 spring:
   datasource:
-    url:jdbc:mysql://localhost:3306/lrapp?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://58.218.64.10:3309/lrapp?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
-    password: root
+    password: lrzhcs++
     tomcat:
       driver-class-name: com.mysql.jdbc.Driver
   jpa:
